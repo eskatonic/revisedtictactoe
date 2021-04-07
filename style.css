@@ -1,0 +1,59 @@
+:root {
+    --gutter-size: .3rem;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h2#game-status {
+    font-weight: 100;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 b {
+    font-size: 3rem;
+    margin: 0 .5rem;
+    margin-top: -.5rem;
+}
+
+#game-board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    row-gap: var(--gutter-size);
+    column-gap: var(--gutter-size);
+    width: 33vw;
+    height: 33vw;
+    margin: auto;
+}
+
+.square {
+    background: blue;
+    color: white;
+    font-size: 5rem;
+}
+
+.square:hover {
+    background: red;
+}
+
+footer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#reset {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: .5rem 1.2rem;
+}
